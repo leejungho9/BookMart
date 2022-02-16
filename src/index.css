@@ -62,6 +62,7 @@ header {
   display: flex;
   justify-content: center;
   margin : 20px;
+  text-align: center;
 }
 .book{
   background-color: #fffbf1;
