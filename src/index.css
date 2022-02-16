@@ -1,13 +1,132 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body, button{
+  font-family: "Roboto", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*HEADER*/
+
+
+header {
+  background-color: #fff9e4;
+  text-align: center;
+
 }
+.header__container{
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.header__container .title{
+  font-size :50px;
+  line-height: 100px;
+  font-weight: bold;
+  margin-top: 50px;
+  color : #000;
+}
+
+.header__container .subtitle{
+  font-size : 20px;
+  line-height: 50px;
+  color : #000;
+
+}
+
+.header__container button{
+  width: 200px;
+  height: 50px;
+  margin : 50px auto;
+  font-size : 18px;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 2px solid rgb(255 238 171);
+  background-color: rgb(255 238 171);
+  color : #000;
+}
+
+.header__container button:hover{
+
+  color : #fff;
+}
+/*Container / Book , Orders*/
+.container{
+  margin: 10px auto;
+  display: flex;
+  max-width: 1500px;
+}
+
+/*books*/
+.books{
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin : 20px;
+}
+.book{
+  background-color: #fffbf1;
+  width: 290px;
+  margin : 10px 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.book:hover{
+  transform: scale(1.1);
+}
+.book img {
+  width: 200px;
+  height: 300px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.book__title {
+  font-size: 17px;
+  font-weight: bold;
+  display: inline-block;
+}
+.book__price{
+  font-size: 14px;
+  font-weight: bold;
+}
+.book__desc , .book__aritist {
+  font-size : 12px;
+  margin :  10px 15px; 
+}
+.plus{
+  font-size: 15px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.btn__plus{
+  font-size: 15px;
+  border : 2px solid rgb(255 238 171);
+  background-color: rgb(255 238 171);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn__plus:hover{
+  border : 2px solid rgb(255 229 128);
+  background-color: rgb(255 229 128);
+}
+/*Order*/
+aside{
+  background-color: #fffbf1;
+  margin: 30px 0;
+  width: 100%;
+  max-height: 200px;
+}
+.order {
+  padding: 50px;
+  width: 420px;
+}
+.order .title {
+  font-size: 25px;
+  margin : 10px;
+}
+/*FOOTER*/
+footer{
+  padding: 20px;
+  background-color: #fff9e4;
+}
+
