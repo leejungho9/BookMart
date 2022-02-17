@@ -1,7 +1,10 @@
 body, button{
   font-family: "Roboto", sans-serif;
 }
+button{
+  cursor: pointer;
 
+}
 /*HEADER*/
 
 
@@ -38,7 +41,6 @@ header {
   font-size : 18px;
   font-weight: 700;
   border-radius: 4px;
-  cursor: pointer;
   border: 2px solid rgb(255 238 171);
   background-color: rgb(255 238 171);
   color : #000;
@@ -92,6 +94,7 @@ header {
 .book__desc , .book__aritist {
   font-size : 12px;
   margin :  10px 15px; 
+  line-height: 1.3;
 }
 .plus{
   font-size: 15px;
@@ -103,27 +106,77 @@ header {
   border : 2px solid rgb(255 238 171);
   background-color: rgb(255 238 171);
   border-radius: 4px;
-  cursor: pointer;
   transition: 0.3s;
 }
 .btn__plus:hover{
-  border : 2px solid rgb(255 229 128);
-  background-color: rgb(255 229 128);
+  border : 2px solid rgb(255, 224, 101);
+  background-color: rgb(255, 224, 101);
 }
 /*Order*/
 aside{
   background-color: #fffbf1;
   margin: 30px 0;
   width: 100%;
-  max-height: 200px;
+  max-height: 170px;
+  text-align: center;
 }
-.order {
+.Noorder {
   padding: 50px;
   width: 420px;
 }
-.order .title {
+.Noorder .title {
   font-size: 25px;
   margin : 10px;
+}
+.body{
+  background-color: #fffbf1;
+}
+.order {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 20px;
+ 
+}
+.order img {
+  width: 30px;
+  margin-right: 20px;
+}
+.order__title {
+  float: right;
+  flex: auto;
+}
+.order__price{
+  margin-right: 30px;
+}
+.order__content {
+  display: flex;
+  flex: auto;
+  align-items: center;
+}
+/*Total*/
+.total___content{
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  height: 20px;
+}
+.total__item{
+  font-size: 20px;
+  font-weight: bold;
+}
+.total .price{
+  flex : auto;
+  text-align: end;
+  margin-right: 30px;
+}
+.btn__remove{
+  width:24px;
+  height: 24px;
+  cursor: pointer;
+}
+.btn__remove:hover{
+  color : rgb(255, 229, 123);
 }
 /*FOOTER*/
 footer{

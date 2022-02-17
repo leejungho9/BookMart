@@ -4,11 +4,11 @@ import Books from './components/Books';
 import Orders from './components/Orders';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import AppStateProvider from './providers/AppStateProvider';
+import Provider from './providers/Provider';
 
 function App() {
   return (
-    <AppStateProvider>
+    <Provider>
 
        <Header />
        <div className="container">
@@ -16,7 +16,7 @@ function App() {
          <Orders />
        </div>
        <Footer/>
-    </AppStateProvider>
+    </Provider>
   );
 }
 
